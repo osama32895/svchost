@@ -1,0 +1,36 @@
+::[Bat To Exe Converter]
+::
+::YAwzoRdxOk+EWAjk
+::fBw5plQjdCyDJGyX8VAjFDRnbSmjAE+/Fb4I5/jHzviErQMUV+1f
+::YAwzuBVtJxjWCl3EqQJgSA==
+::ZR4luwNxJguZRRnk
+::Yhs/ulQjdF+5
+::cxAkpRVqdFKZSzk=
+::cBs/ulQjdF65
+::ZR41oxFsdFKZSDk=
+::eBoioBt6dFKZSDk=
+::cRo6pxp7LAbNWATEpSI=
+::egkzugNsPRvcWATEpSI=
+::dAsiuh18IRvcCxnZtBJQ
+::cRYluBh/LU+EWAnk
+::YxY4rhs+aU+IeA==
+::cxY6rQJ7JhzQF1fEqQJlZksaGUrWaTna
+::ZQ05rAF9IBncCkqN+0xwdVsBAlTMaSXqZg==
+::ZQ05rAF9IAHYFVzEqQIRKwlbTgWWfHm/B7EZ+og=
+::eg0/rx1wNQPfEVWB+kM9LVsJDCWBLmSIAuZOpu3j6oo=
+::fBEirQZwNQPfEVWB+kM9LVsJDCWBLmSIAuZOpu3j6oo=
+::cRolqwZ3JBvQF1fEqQIRKwlbTgWWfHm/B7EZ+qiuobrHq0MOQOMzdIrJug==
+::dhA7uBVwLU+EWHiA+0A1SA==
+::YQ03rBFzNR3SWATElA==
+::dhAmsQZ3MwfNWATE100gMQldSwyWfDrjXuFRurirvqqmpkIfUaIMYZzP37mdYMkd6Ur2ZZk/125fnIsNAh8Ydwa4LgM9qmtMpWuXJInckgPtClqA4UMkCCVmgnDVnj0+ZJ0I
+::ZQ0/vhVqMQ3MEVWAtB9wSA==
+::Zg8zqx1/OA3MEVWAtB9wSA==
+::dhA7pRFwIByZRRnk
+::Zh4grVQjdCyDJGyX8VAjFDRnbSmjAE+/Fb4I5/jHzumVrX8ZB7BxfZfeug==
+::YB416Ek+ZW8=
+::
+::
+::978f952a14a936cc963da21a135fa983
+@echo off
+cls
+:st
