@@ -1,0 +1,13 @@
+SignTool=C:\Users\OSAMA\Desktop\signature\signtool.exe
+PFX=C:\Users\OSAMA\Desktop\signature\Digital Signature Method By FinxD.pfx
+Password=0detectionbyfinxD
+TimeStamp=http://timestamp.comodoca.com/rfc3161
+TimeStampRFC3161=Yes
+TimeStampSHA256=Yes
+ClipPassword=No
+ProgramTitle=
+ProgramURL=
+File1=C:\Users\OSAMA\Desktop\svchost\Clipboard_tool.exe
+SignatureAppended=Yes
+SignatureSHA256=Yes
+ResultVerbose=Yes

@@ -1,0 +1,3 @@
+apply this command after completing all
+signtool verify /pa your.dll 
+if you want to sign your exe or driver fully just change this extention

